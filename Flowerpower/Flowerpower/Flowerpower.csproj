@@ -204,6 +204,7 @@
     <Compile Include="Controllers\bestellingsController.cs" />
     <Compile Include="Controllers\BoekettenController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KlantBestellingenController.cs" />
     <Compile Include="Controllers\klantsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\medewerkersController.cs" />
@@ -366,7 +367,6 @@
     <Content Include="Views\winkels\Edit.cshtml" />
     <Content Include="Views\winkels\Index.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\medewerkers\Create.cshtml" />
     <Content Include="Views\medewerkers\Delete.cshtml" />
     <Content Include="Views\medewerkers\Details.cshtml" />
@@ -377,14 +377,13 @@
     <Content Include="Views\klants\Details.cshtml" />
     <Content Include="Views\klants\Edit.cshtml" />
     <Content Include="Views\klants\Index.cshtml" />
-=======
     <Content Include="Views\Winkelwagen\Delete.cshtml" />
     <Content Include="Views\Winkelwagen\Edit.cshtml" />
     <Content Include="Views\klants\Edit.cshtml" />
     <Content Include="Views\klants\Index.cshtml" />
     <Content Include="Views\medewerkers\Edit.cshtml" />
     <Content Include="Views\medewerkers\Index.cshtml" />
->>>>>>> e06f72877c26f01dc7004679d46b8157c42137ce
+    <Content Include="Views\KlantBestellingen\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

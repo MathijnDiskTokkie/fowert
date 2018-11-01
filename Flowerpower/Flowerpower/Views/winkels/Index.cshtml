@@ -7,7 +7,7 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <a href="@Url.Action("Create")"><button type="button" class="btn btn-success">Nieuw</button></a>
 </p>
 <table class="table">
     <tr>
@@ -59,7 +59,10 @@
             @Html.DisplayFor(modelItem => item.winkelactief)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.winkelcode })
+            <a href="@Url.Action("Edit", new { id = item.winkelcode })">
+                <button type="button" class="btn btn-warning">Edit</button>
+            </a>
+
         </td>
     </tr>
 }

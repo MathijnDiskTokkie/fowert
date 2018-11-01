@@ -63,9 +63,17 @@
             @Html.DisplayFor(modelItem => item.woonplaats)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.klantid }) |
-            @Html.ActionLink("Details", "Details", new { id=item.klantid }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.klantid })
+            <a href="@Url.Action("Edit", new { id = item.klantid })">
+                <button type="button" class="btn btn-warning">Edit</button>
+            </a>
+
+            <a href="@Url.Action("Details", new { id = item.klantid })">
+                <button type="button" class="btn btn-info">Details</button>
+            </a>
+
+            <a href="@Url.Action("Delete", new { id = item.klantid })">
+                <button type="button" class="btn btn-danger">Delete</button>
+            </a>
         </td>
     </tr>
 }

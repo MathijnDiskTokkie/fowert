@@ -90,7 +90,11 @@ ul.nav.navbar-nav {
     width: 33.33%;
     padding: 20px;
     /*height: 450px;*/
+    
 }
+
+.container body-content {
+margin: 20px!important;}
 
 .row:after {
     content: "";
@@ -109,6 +113,7 @@ ul.nav.navbar-nav {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
 #columns {
     background-color: #ffffff;
 }
@@ -122,7 +127,7 @@ ul.nav.navbar-nav {
     padding: 10px;
 }
 
-.flowerpower-div{
+.flowerpower-div {
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -208,16 +213,16 @@ footer {
     font-family: Rajdhani;
 }
 
-.bloem-block-img{
+.bloem-block-img {
     width: 100px;
     height: auto;
 }
 
-.bloem-h4{
+.bloem-h4 {
     text-align: center;
 }
 
-#bloem-div-container{
+#bloem-div-container {
     margin-top: 50px;
 }
 
@@ -240,5 +245,3 @@ div#footer-contact-blok {
     padding: 5px 0 15px 0;
     box-shadow: 0 2px 3px rgba(0,0,0,.05);
 }
-
-

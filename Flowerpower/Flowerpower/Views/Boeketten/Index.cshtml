@@ -13,7 +13,7 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <a href="@Url.Action("Create")"><button type="button" class="btn btn-success">Nieuw</button></a>
 </p>
 <table class="table">
     <tr>
@@ -32,7 +32,7 @@
         <th></th>
     </tr>
 
-<<<<<<< HEAD
+
 @foreach (var item in Model) {
     <tr>
         <td>
@@ -48,13 +48,22 @@
             @Html.EditorFor(modelItem => item.gearchiveerd)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.productid }) |
-            @Html.ActionLink("Details", "Details", new { id = item.productid }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.productid })
+            <a href="@Url.Action("Edit", new { id = item.productid })">
+                <button type="button" class="btn btn-warning">Edit</button>
+            </a>
+
+            <a href="@Url.Action("Details", new { id = item.productid })">
+                <button type="button" class="btn btn-info">Details</button>
+            </a>
+
+            <a href="@Url.Action("Delete", new { id = item.productid })">
+                <button type="button" class="btn btn-danger">Delete</button>
+            </a>
+
         </td>
     </tr>
 }
-=======
+
     @foreach (var item in Model)
     {
         <tr>
@@ -71,10 +80,13 @@
                 @Html.EditorFor(modelItem => item.gearchiveerd)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.productid })
+                <a href="@Url.Action("Edit", new { id = item.productid })">
+                    <button type="button" class="btn btn-warning">Edit</button>
+                </a>
+
+              
             </td>
         </tr>
     }
->>>>>>> e06f72877c26f01dc7004679d46b8157c42137ce
 
 </table>

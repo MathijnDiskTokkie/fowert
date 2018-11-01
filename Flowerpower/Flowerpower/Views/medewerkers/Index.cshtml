@@ -13,7 +13,7 @@
 </head>
 <body>
     <p>
-        @Html.ActionLink("Create New", "Create")
+        <a href="@Url.Action("Create")"><button type="button" class="btn btn-success">Nieuw</button></a>
     </p>
     <div class="row">
     <div class="table">
@@ -43,9 +43,17 @@
                 @Html.DisplayFor(modelItem => item.winkel.winkelnaam)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.medewerkerid }) |
-                @Html.ActionLink("Details", "Details", new { id=item.medewerkerid }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.medewerkerid })
+                <a href="@Url.Action("Edit", new { id = item.medewerkerid })">
+                    <button type="button" class="btn btn-warning">Edit</button>
+                </a>
+
+                <a href="@Url.Action("Details", new { id = item.medewerkerid })">
+                    <button type="button" class="btn btn-info">Details</button>
+                </a>
+
+                <a href="@Url.Action("Delete", new { id = item.medewerkerid })">
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </a>
             </td>
         </tr>
     }
