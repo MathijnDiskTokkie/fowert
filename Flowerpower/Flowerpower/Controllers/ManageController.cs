@@ -16,6 +16,9 @@ namespace Flowerpower.Controllers
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
+        FlowerpowerEntities db = new FlowerpowerEntities();
+
+
         public ManageController()
         {
         }
@@ -63,9 +66,12 @@ namespace Flowerpower.Controllers
                 : message == ManageMessageId.RemovePhoneSuccess ? "Your phone number was removed."
                 : "";
 
+         
+
             var userId = User.Identity.GetUserId();
             var model = new IndexViewModel
             {
+                klant = (from a in db.klant where a.email == User.Identity.Name select a).FirstOrDefault(),
                 HasPassword = HasPassword(),
                 PhoneNumber = await UserManager.GetPhoneNumberAsync(userId),
                 TwoFactor = await UserManager.GetTwoFactorEnabledAsync(userId),
