@@ -13,9 +13,15 @@
     {
     @Html.AntiForgeryToken()
 
-<ul class="nav navbar-nav navbar-right">
+    <ul class="nav navbar-nav navbar-right">
+    @if (!User.IsInRole("Manager"))
+    {
     <li>@Html.ActionLink(" ", "Index", "Winkelwagen", routeValues: new { productid = 0, winkelid = 0 }, htmlAttributes: new { id = "winkelmandid", @class = "fas fa-shopping-cart" })</li>
+    }
+     @if (!User.IsInRole("Medewerker"))
+     {
     <li>@Html.ActionLink("Mijn bestellingen", "Index", "KlantBestellingen")</li>
+     }
     <li>
         @Html.ActionLink("Manage account", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
     </li>
