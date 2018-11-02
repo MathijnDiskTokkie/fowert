@@ -206,6 +206,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KlantBestellingenController.cs" />
     <Compile Include="Controllers\klantsController.cs" />
+    <Compile Include="Controllers\klantsgegevensController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\medewerkersController.cs" />
     <Compile Include="Controllers\RolesController.cs" />
@@ -384,6 +385,7 @@
     <Content Include="Views\medewerkers\Edit.cshtml" />
     <Content Include="Views\medewerkers\Index.cshtml" />
     <Content Include="Views\KlantBestellingen\Index.cshtml" />
+    <Content Include="Views\klantsgegevens\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
