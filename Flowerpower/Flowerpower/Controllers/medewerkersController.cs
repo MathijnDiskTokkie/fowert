@@ -48,7 +48,7 @@ namespace Flowerpower.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "medewerkerid,medewerkernaam,medewerkerachternaam,winkelcode")] medewerkers medewerkers)
+        public ActionResult Create([Bind(Include = "medewerkerid,medewerkernaam,medewerkerachternaam,winkelcode,medewerkeractief")] medewerkers medewerkers)
         {
             if (ModelState.IsValid)
             {
@@ -82,7 +82,7 @@ namespace Flowerpower.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "medewerkerid,medewerkernaam,medewerkerachternaam,winkelcode")] medewerkers medewerkers)
+        public ActionResult Edit([Bind(Include = "medewerkerid,medewerkernaam,medewerkerachternaam,winkelcode,medewerkeractief")] medewerkers medewerkers)
         {
             if (ModelState.IsValid)
             {

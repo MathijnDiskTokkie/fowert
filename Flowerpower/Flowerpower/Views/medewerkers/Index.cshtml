@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Flowerpower.Models.medewerkers>
 
 @{
-   
+    
 }
 
 <!DOCTYPE html>
@@ -9,14 +9,12 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+    <title>View</title>
 </head>
 <body>
     <p>
-        <a href="@Url.Action("Create")"><button type="button" class="btn btn-success">Nieuw</button></a>
+        @Html.ActionLink("Create New", "Create")
     </p>
-    <div class="row">
-    <div class="table">
     <table class="table">
         <tr>
             <th>
@@ -43,23 +41,11 @@
                 @Html.DisplayFor(modelItem => item.winkel.winkelnaam)
             </td>
             <td>
-                <a href="@Url.Action("Edit", new { id = item.medewerkerid })">
-                    <button type="button" class="btn btn-warning">Edit</button>
-                </a>
-
-                <a href="@Url.Action("Details", new { id = item.medewerkerid })">
-                    <button type="button" class="btn btn-info">Details</button>
-                </a>
-
-                <a href="@Url.Action("Delete", new { id = item.medewerkerid })">
-                    <button type="button" class="btn btn-danger">Delete</button>
-                </a>
+                @Html.ActionLink("Edit", "Edit","KlantBestelling", new { id=item.medewerkerid }) |
             </td>
         </tr>
     }
     
     </table>
-        </div>
-        </div>
 </body>
 </html>

@@ -23,10 +23,17 @@
             }
             ]
         </dd>
-
+        
     </dl>
-    
+    <div class="col-sm-offset-8">
+        <h4> Verander hier uw NAW gegevens</h4>
+        
+            
+
+            <a href="@Url.Action("Edit","klantsgegevens", new { id = Model.klant.klantid })">
+                <button type="button" class="btn btn-warning">Bewerk NAW gegevens</button>
+            </a>
+        
+    </div>
+
 </div>
-<a href="@Url.Action("Edit","klantsgegevens", new { id = Model.klant.klantid })">
-    <button type="button" class="btn btn-warning">Edit</button>
-</a>

@@ -24,6 +24,7 @@ namespace Flowerpower.Models
         public string medewerkernaam { get; set; }
         public string medewerkerachternaam { get; set; }
         public Nullable<int> winkelcode { get; set; }
+        public Nullable<bool> medewerkeractief { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<bestelling> bestelling { get; set; }

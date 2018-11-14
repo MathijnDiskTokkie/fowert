@@ -37,5 +37,6 @@ namespace Flowerpower.Models
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<winkel> winkel { get; set; }
         public virtual DbSet<winkelmand> winkelmand { get; set; }
+        public virtual DbSet<database_firewall_rules> database_firewall_rules { get; set; }
     }
 }

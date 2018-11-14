@@ -18,7 +18,7 @@
     {
     <li>@Html.ActionLink(" ", "Index", "Winkelwagen", routeValues: new { productid = 0, winkelid = 0 }, htmlAttributes: new { id = "winkelmandid", @class = "fas fa-shopping-cart" })</li>
     }
-     @if (!User.IsInRole("Medewerker"))
+     @if (!User.IsInRole("Medewerker") && !User.IsInRole("Manager"))
      {
     <li>@Html.ActionLink("Mijn bestellingen", "Index", "KlantBestellingen")</li>
      }

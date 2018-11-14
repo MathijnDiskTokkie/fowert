@@ -236,6 +236,9 @@
     <Compile Include="Models\C__MigrationHistory.cs">
       <DependentUpon>PowerFlowerEntitie.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\database_firewall_rules.cs">
+      <DependentUpon>PowerFlowerEntitie.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\klant.cs">
       <DependentUpon>PowerFlowerEntitie.tt</DependentUpon>
@@ -368,11 +371,6 @@
     <Content Include="Views\winkels\Edit.cshtml" />
     <Content Include="Views\winkels\Index.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
-    <Content Include="Views\medewerkers\Create.cshtml" />
-    <Content Include="Views\medewerkers\Delete.cshtml" />
-    <Content Include="Views\medewerkers\Details.cshtml" />
-    <Content Include="Views\medewerkers\Edit.cshtml" />
-    <Content Include="Views\medewerkers\Index.cshtml" />
     <Content Include="Views\klants\Create.cshtml" />
     <Content Include="Views\klants\Delete.cshtml" />
     <Content Include="Views\klants\Details.cshtml" />
@@ -382,10 +380,11 @@
     <Content Include="Views\Winkelwagen\Edit.cshtml" />
     <Content Include="Views\klants\Edit.cshtml" />
     <Content Include="Views\klants\Index.cshtml" />
+    <Content Include="Views\klantsgegevens\Edit.cshtml" />
     <Content Include="Views\medewerkers\Edit.cshtml" />
     <Content Include="Views\medewerkers\Index.cshtml" />
-    <Content Include="Views\KlantBestellingen\Index.cshtml" />
-    <Content Include="Views\klantsgegevens\Edit.cshtml" />
+    <Content Include="Views\KlantBestellingen\Edit.cshtml" />
+    <Content Include="Views\KlantBestellingen\index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

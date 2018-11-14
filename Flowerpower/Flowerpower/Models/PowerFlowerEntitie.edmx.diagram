@@ -26,6 +26,7 @@
         <AssociationConnector Association="FlowerpowerModel.FK_medewerkers_winkel" ManuallyRouted="false" />
         <AssociationConnector Association="FlowerpowerModel.FK_winkelmand_producten" ManuallyRouted="false" />
         <AssociationConnector Association="FlowerpowerModel.AspNetUserRoles" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="FlowerpowerModel.database_firewall_rules" Width="1.5" PointX="0.75" PointY="10.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

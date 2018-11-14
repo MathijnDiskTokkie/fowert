@@ -9,14 +9,16 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+    <title>index</title>
 </head>
 <body>
-    
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
     <table class="table">
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.winkelmand.FirstOrDefault().producten.productnaam)
+                @Html.DisplayNameFor(model => model.winkelcode)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.bestellinggeplaatst)
@@ -36,7 +38,7 @@
     @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.winkelmand.FirstOrDefault().producten.productnaam)
+                @Html.DisplayFor(modelItem => item.winkelcode)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.bestellinggeplaatst)
@@ -50,7 +52,10 @@
             <td>
                 @Html.DisplayFor(modelItem => item.winkel.winkelnaam)
             </td>
-            
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.bestellingid }) |
+
+            </td>
         </tr>
     }
     
